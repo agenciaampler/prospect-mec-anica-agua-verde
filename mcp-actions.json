@@ -1,0 +1,41 @@
+{
+    "version": "1.0",
+    "site": "https://agenciaampler.github.io/prospect-mec-anica-agua-verde/index.html",
+    "business": {
+        "name": "Mecânica Água Verde",
+        "type": "AutoRepair",
+        "address": "R. Dom Pedro I, 277 - Água Verde, Curitiba - PR, 80620-130",
+        "areaServed": [
+            "Curitiba e regiao metropolitana"
+        ]
+    },
+    "actions": [
+        {
+            "id": "contact-whatsapp",
+            "name": "Falar pelo WhatsApp",
+            "description": "Inicia uma conversa no WhatsApp com a oficina para pedir orientação, orçamento ou agendamento.",
+            "method": "link",
+            "target": "https://wa.me/5541999940163?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Mec%C3%A2nica%20%C3%81gua%20Verde%20e%20gostaria%20de%20agendar%20um%20atendimento.",
+            "parameters": {
+                "optional": [
+                    "vehicle_brand",
+                    "vehicle_model",
+                    "vehicle_year",
+                    "symptom"
+                ]
+            }
+        },
+        {
+            "id": "open-route",
+            "name": "Abrir rota no mapa",
+            "description": "Abre a localização da oficina no Google Maps para conferir endereço e rota.",
+            "method": "link",
+            "target": "https://maps.google.com/?cid=7348783568648875685&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+            "parameters": {
+                "optional": [
+                    "origin"
+                ]
+            }
+        }
+    ]
+}
